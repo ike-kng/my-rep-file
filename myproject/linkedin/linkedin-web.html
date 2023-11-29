@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/icons/fontawesome-free-6.4.2-web/css/all.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    #wrappper {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        /* background: blanchedalmond; */
+
+    }
+
+    .contain {
+        width: 80%;
+        height: 20px;
+        /* background: red; */
+        justify-self: center;
+        align-items: center;
+        justify-content: c;
+        display: flex;
+
+    }
+
+    .contain ul {
+        border-right: 1px solid gray;
+        display: inline-block;
+        list-style-type: none;
+        margin-left: 420px;
+
+    }
+
+    .contain ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .contain ol {
+        display: flex;
+    }
+
+    .container-flex {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex-body {
+        margin-top: 60px;
+        width: 80%;
+        /* background: blue; */
+        display: flex;
+    }
+
+    .col-md-8 {
+        width: 50%;
+        height: 600px;
+        justify-content: center;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    input[type=email] {
+        width: 60%;
+        height: 35px;
+        border: 2px solid gray;
+        border-radius: 4px;
+    }
+
+    input[type=password] {
+        width: 60%;
+        height: 35px;
+        border: 2px solid gray;
+        border-radius: 4px;
+    }
+
+    .button {
+        width: 60%;
+        height: 35px;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        background: rgb(0, 85, 255);
+    }
+
+    .eco {
+        width: 500px;
+        margin-top: 50px;
+        height: 500px;
+        border-radius: 50%;
+        background: url(/IMAGES/EcoBank_Graphic.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .line {
+        width: 60%;
+        border-bottom: 1px solid gray;
+    }
+
+    .or {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgb(130, 82, 82);
+        margin-top: 10px;
+        margin-left: 150px;
+        text-align: center;
+    }
+
+    /* .hr {
+        position: absolute;
+        left: 50%;
+        transform-origin: initial;
+        border: 2px solid #ddd;
+        height: 175px;
+        z-index: 7;
+    }
+
+    /* text inside the vertical line */
+    /* .hr-innertext {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        padding: 8px 10px;
+
+    }  */
+
+    .google {
+        width: 60%;
+        height: 35px;
+        border-radius: 20px;
+        background: white;
+        border: 2px solid rgb(181, 177, 177);
+    }
+
+    .new {
+        width: 60%;
+        height: 45px;
+        border-radius: 30px;
+        background: white;
+        font-weight: bolder;
+        border: 1px solid gray;
+    }
+
+    .explore {
+        width: 100%;
+        height: 300px;
+        background: rgb(239, 235, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .market {
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+    .word{
+        width: 50%;
+    }
+    .buttons{
+        width: 50%;
+    }
+    .grid-btn button{
+        height: 40px;
+        border-radius: 20px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .mark{
+        height: 40px;
+        width: 20%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    .public{
+        height: 40px;
+        width: 30%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    .enginer{
+        height: 40px;
+        width: 20%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    .health{
+        height: 40px;
+        width: 20%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    .it{
+        height: 40px;
+        width: 20%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    .ad{
+        height: 40px;
+        width: 30%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    .sus{
+        height: 40px;
+        width: 20%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    .retail{
+        height: 40px;
+        width: 30%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+
+    .human{
+        height: 40px;
+        width: 25%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    .biz{
+        height: 40px;
+        width: 30%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    .tele{
+        height: 40px;
+        width: 26%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    .hr{
+        height: 40px;
+        width: 26%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    .info{
+        height: 40px;
+        width: 30%;
+        border-radius: 20px;
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    .show-all{
+        height: 40px;
+        width: 17%;
+        border-radius: 20px;
+        border: 1px solid rgb(0, 123, 255);
+        color: rgb(0, 123, 255);
+        margin-top: 10px;
+    }
+    .show-all:hover{
+        background: rgb(70, 146, 226);
+        color: white;
+    }
+    .show-all-1{
+        height: 28px;
+        width: 17%;
+        border-radius: 20px;
+        cursor: pointer;
+        border: 1px solid gray;
+        /* color: rgb(0, 123, 255); */
+        margin-top: 10px;
+    }
+    .find {
+        width: 100%;
+        /* margin-top: 30px; */
+        height: 300px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign{
+        height: 40px;
+        width: 9%;
+        background: #fff;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-left: 10px;
+        border: 1px solid rgb(0, 123, 255);
+        color: rgb(0, 123, 255);
+    }
+    .sign:hover{
+        background: rgb(70, 146, 226);
+        color: white;
+    }
+
+    .display {
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+    .word2{
+        width: 50%;
+    }
+    .buttons2{
+        width: 70%;
+    }
+    @media screen and (max-width:1200px) {
+        .container-flex,
+        .contain,
+        .flex-body{
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .eco{
+            display: none;
+        }
+        .header,
+        .contain,
+        .flex-body,
+        .col-md-8,
+        .form{
+            width: 100%;
+        }
+
+        .form{
+            width: 100%;
+        }
+
+        .contain ul li,
+        .contain ol,
+        .sign{
+            display: none;
+        }
+
+        input{
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <div class="header">
+            <div class="contain">
+                <div class="logo">
+                    <img src="/IMAGES/Linkedin-Logo.png" alt="" width="100px">
+                </div>
+                <ul>
+                    <li><i class="fa fa-outdent"></i> <br>articles</li>
+                    <li> <i class="fa fa-user-group"></i><br>people</li>
+                    <li> <i class="fab fa-youtube"></i><br>Learning</li>
+                    <li><i class="fa fa-briefcase"></i><br>Jobs</li>
+                </ul>
+                <ol>
+                    <h4>Join now</h4>
+                </ol>
+                <button class="sign" style="font-size: 15px;font-weight: bolder; ">Sign in</button>
+            </div>
+        </div>
+        <div class="container-flex">
+            <div class="flex-body">
+                <div class="col-md-8">
+                    <div class="form">
+                        <h2 style="font-size:40px;">Find jobs through your <br>community</h2>
+                        <form action="" method="post">
+                            <label for="">Email or phone</label><br>
+                            <br>
+                            <input type="email" required><br>
+                            <br>
+                            <label for="password">password</label><br>
+                            <br>
+                            <input type="password" required>
+                        </form>
+                        <a href="" style="color: blue; text-decoration: none;">
+                            <h3>forgot password?</h3>
+                        </a>
+                        <a href="/myproject/linkedin/index.html"><button class="button">Sign in</button></a>
+                        <br>
+                        <br>
+                        <!-- <div class="hr">
+                            <span class="hr-innertext">or</span>
+                          </div> -->
+
+                        <button class="google"> continue with google</button>
+                        <br>
+                        <br>
+                        <br>
+                        <button class="new ">New to linkedin? Join now</button>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="eco"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="explore">
+            <div class="market">
+                <div class="word">
+                    <h3 style="font-size: 40px; font-weight: lighter; color: rgb(75, 74, 74);">Explore collaborative <br> articles</h3>
+
+                    <p style="text-align: left;">we're unlocking community knowledge in a new <br>way.
+                        Expert add insight directly into each <br>article,started with the help of AI</p>
+                </div>
+                <div class="buttons">
+                    <div class="grid-btn">
+                        <button class="mark">marketing</button>
+                        <button class="public">public Adminisrtation</button>
+                        <button class="health">healthcare</button>
+                        <button class="enginer">Engineering</button>
+                        <br>
+                        <button class="it">IT services</button>
+                        <button class="sus">sustainability</button>
+                        <button class="biz">business Adminisrtation</button>
+                        <br>
+                        <button class="tele">Telecomunication</button>
+                        <button class="hr">HR management</button>
+                        <button class="show-all"> show all</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="find">
+            <div class="display">
+                <div class="word2">
+                    <p style="font-size: 40px; font-weight: lighter; color: rgb(75, 74, 74);">Find the right job or <br>internship for you</p>
+                </div>
+                <div class="buttons2">
+                    <h5 style=" color: rgb(75, 74, 74);">SUGGESTED SEARCHES</h5>
+                    <button class="mark">Engineering</button>
+                    <button class="public">business development</button>
+                    <button class="health">finance</button>
+                    <br>
+                    <button class="enginer" style="width: 15%;">marketing</button>
+                    <button class="ad">Adminisrative Assistant</button>
+                    <button class="retail" style="width: 20%;">Retail Associate</button>
+                    <button class="biz" style="width: 25%;">Customer Services</button>
+                    
+                    <button class="tele" style="width: 16%;">Oprations</button>
+                    <button class="info">Information Technology</button>
+                    <button class="human">Human Resources</button>
+                    <br>
+                    <button class="show-all-1"> show all <i class="fa fa fa-angle-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

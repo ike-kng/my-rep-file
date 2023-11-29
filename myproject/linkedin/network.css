@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+    color: black;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header {
+    background: white;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.flexnav {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    justify-content: space-between;
+    margin: 20px 10px;
+    text-decoration: none;
+}
+
+input[type=search] {
+    border: none;
+    background: rgb(185, 219, 233);
+    margin-left: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 30px;
+    width: 150px;
+}
+
+.logo {
+    height: 30px;
+    width: 15px;
+}
+
+input[type=submit] {
+    height: 30px;
+    border-radius: 5px;
+    width: 60px;
+    border: none;
+}
+
+input[type=search]:focus {
+    width: 200px;
+    transition: 0.3s all ease;
+}
+
+.logo-area {
+    display: flex;
+    margin: 10px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid black;
+    padding-bottom: 17px;
+    transition: all 0.2s;
+}
+
+nav:nth-of-type(2nd) {
+    border-bottom: 3px solid black;
+    padding-bottom: 17px;
+}
+
+.fa-house-chimney-window {
+    margin-left: 10PX;
+}
+
+.fa-user-group {
+    margin-left: 20px;
+}
+
+.fa-briefcase {
+    margin-left: 5px;
+}
+
+.fa-comment-dots {
+    margin-left: 20px;
+}
+
+.fa-bell {
+    color: black;
+    margin-left: 25px;
+}
+
+.fa-address-book {
+    margin-left: 25px;
+}
+
+
+.main {
+    display: flex;
+}
+
+.left {
+    width: 300px;
+    height: 300px;
+    background: white;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+.side {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    width: 300px;
+    background: white;
+    padding: 20px;
+}
+
+.side:hover {
+    background: whitesmoke;
+    width: 300px;
+}
+
+.up {
+    width: 700px;
+    height: 50px;
+    display: flex;
+    background: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+button {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background: none;
+}
+
+button:hover {
+    background: whitesmoke;
+    border: none;
+}
+
+.pol {
+    margin-left: 15px;
+    margin-top: 6px;
+}
+
+.pol1 {
+    margin-right: 15px;
+}
+
+.middle {
+    width: 700px;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.pic1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -15px;
+    margin-top: 5px;
+}
+
+.pic2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -15px;
+    margin-top: 5px;
+}
+
+.lol {
+    display: flex;
+}
+
+.joy2 {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.Premium {
+    width: 200px;
+    height: 30px;
+    background: #f9c982;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.Premium:hover {
+    background: #fa9702;
+}
+
+.alltogether {
+    width: 700px;
+    height: 2100px;
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.others {
+    display: flex;
+}
+
+.box {
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    background: whitesmoke;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.coverphoto {
+    width: 220px;
+    height: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: url(images/pexels-ryan-west-1719648\ \(1\).jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.words {
+    margin-left: 10px;
+}
+
+.follow {
+    width: 200px;
+    height: 30px;
+    color: skyblue;
+    border: 2px solid skyblue;
+    background: none;
+    margin-top: 10px;
+}

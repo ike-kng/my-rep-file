@@ -1,0 +1,7 @@
+
+@media (max-width:100px){
+    header{
+        align-items: center;
+        justify-content: space-between;
+    }
+}

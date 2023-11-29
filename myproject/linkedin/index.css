@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+    color: black;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.flexnav {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    justify-content: space-between;
+    margin: 20px 10px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+header {
+    background: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input {
+    width: 450px;
+    height: 50px;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+button {
+    width: 450px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: skyblue;
+}
+
+.jobs {
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.all {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.click {
+    margin-left: 90px;
+}
+
+.click1 {
+    margin-left: 175px;
+}

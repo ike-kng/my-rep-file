@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+    color: black;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header {
+    background: white;
+    font-size: 12px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.flexnav {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    justify-content: space-between;
+    margin: 20px 10px;
+    text-decoration: none;
+}
+
+input[type=search] {
+    border: none;
+    background: rgb(185, 219, 233);
+    margin-left: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 30px;
+    width: 200px;
+}
+
+.logo {
+    height: 30px;
+    width: 15px;
+}
+
+input[type=submit] {
+    height: 30px;
+    border-radius: 5px;
+    width: 60px;
+    border: none;
+}
+
+input[type=search]:focus {
+    width: 250px;
+    transition: 0.3s all ease;
+}
+
+.logo-area {
+    display: flex;
+    margin: 10px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid black;
+    padding-bottom: 17px;
+    transition: all 0.2s;
+}
+    .fa-house-chimney-window {
+        margin-left: 10PX;
+    }
+    
+    .fa-user-group {
+        margin-left: 20px;
+    }
+    
+    .fa-briefcase {
+        margin-left: 5px;
+    }
+    
+    .fa-comment-dots {
+        margin-left: 20px;
+    }
+    
+    .fa-bell {
+        color: black;
+        margin-left: 25px;
+    }
+    
+    .fa-address-book {
+        margin-left: 25px;
+    }
+
+    .body {
+        display: flex;
+        margin-top: 20px;
+        margin-left: 170px;
+    }
+
+    .left {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        background: white;
+        margin-right: 20px;
+    }
+
+    .side {
+        display: block;
+        padding: 10px 10px;
+        text-decoration: none;
+        width: 300px;
+        background: white;
+        padding: 20px;
+    }
+    
+    .side:hover {
+        background: whitesmoke;
+        width: 300px;
+    }
+    .middle {
+        width: 700px;
+        height: 200px;
+        background: white;
+        border-radius: 10px;
+        margin-left: 10px;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    
+    .pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: 5px;
+    }
+    
+    .pic1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: -15px;
+        margin-top: 5px;
+    }
+    
+    .pic2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: -15px;
+        margin-top: 5px;
+    }
+    
+    .lol {
+        display: flex;
+    }
+    
+    .joy2 {
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    
+    .Premium {
+        width: 200px;
+        height: 30px;
+        background: #f9c982;
+        border: none;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    
+    .Premium:hover {
+        background: #fa9702;
+    }
+    
+    .other-middle {
+        width: 700px;
+        height: 600px;
+        background: white;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }

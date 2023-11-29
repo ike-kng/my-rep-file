@@ -1,0 +1,774 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f7f7f7;
+    font-size: 12px;
+    max-width: 1800px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /* height: 1500px; */
+}
+
+header{
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 9px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid #333; */
+}
+
+.wrapper-container{
+    width: 80%;
+    margin: 6% auto;
+    /* border: 1px solid #333; */
+}
+
+
+.flexnavs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-menu nav ul li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 13px;
+    list-style-type: none;
+}
+.main-menu i {
+    font-size: 20px;
+}
+
+.main-menu li:hover{
+    cursor: pointer;
+    margin-top: 7px;
+    border-bottom: 3px solid blue;
+}
+.main-menu li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #5c9600;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 2.5s;
+    }
+
+
+    .premium-media{
+        display: none;
+    }
+
+    .premium-media p {
+        display: inline-block;
+        margin: 10px;
+        list-style-type: none;
+
+    }
+
+    .premium-media  a p {
+        text-decoration: underline;
+    }
+
+    .premium-media ul li:hover {
+        cursor: pointer;
+    }
+
+    .container.left-side-bar-media{
+        display: none;
+    }
+
+    .left-side-bar-media{
+        display: none;
+    }
+
+    .secure-it-media{
+        display: none;
+    }
+
+    .main-menu1{
+        display: none;
+    }
+    
+.premium ul li{
+    display: inline-block;
+    margin: 10px;
+    list-style-type: none;
+    
+}
+.premium ul a li{
+    text-decoration: underline;
+}
+.premium ul  li:hover{
+    cursor: pointer;
+}
+
+.logo-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=search]{
+    width: 200px;
+    height: 33px;
+    padding: 13px 40px 13px 30px;
+    background-image: url(/IMAGES/search\ icon1.jpeg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background: #bbd4ee;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+input[type=search]:focus{
+    width: 250px;
+    outline-color: #bbd4ee;
+    transition: all 2s;
+    
+}
+
+.premium{
+    border-left: 1px solid #d7d7d7;
+}
+
+
+.flexcontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    
+}
+
+.main-menu2{
+    display: none;
+}
+
+.left-side-bar{
+    width: 100%;
+    /* border: 1px solid #333; */
+    background: #fff;
+    height: 460px;
+    border-radius: 9px ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+.right-side-bar{
+    width: 100%;
+    background: #fff;
+    border-radius: 9px ;
+    /* border: 1px solid #333; */
+    height: 340px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.newsfeed{
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    width: 50%;
+    /* border-radius: 9px ; */
+    /* background: #fff; */
+    /* height: 100px; */
+}
+
+.post{
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+     width: 100%;
+     /* display: flex; */
+     border-radius: 9px  ;
+     display: block;
+     background: #fff;
+     height: 125px;
+}
+.pot1{
+    width: 80%;
+    height: 30px;
+    justify-content: center;
+    display: flex;
+    /* background: red; */
+}
+.form{
+    width: 100%;
+    font-size: 14px;
+    height: 50px;
+    border-radius: 30px;
+    /* padding-left: 15px; */
+    border: 1px solid gray;
+    background: #fff;
+    margin-top: 10px;
+    text-align: left;
+}
+.form:hover{
+    cursor: pointer;
+    background: #f0f0f1;
+}
+
+.fed1{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+    border-radius: 9px ;
+    background: #fff;
+    height: 800px;
+    margin-top: 20px;
+}
+.feeds2{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+    border-radius: 9px ;
+    background: #fff;
+    height: 800px;
+    margin-top: 20px;
+}
+.daniella{
+    width: 100%;
+    height: 500px;
+    /* border-radius: 9px 9px 0 0; */
+    background: url(/IMAGES/person_4.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.feeds3{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+    border-radius: 9px ;
+    background: #fff;
+    height: 800px;
+    margin-top: 20px;
+}
+.computer{
+    width: 100%;
+    height: 500px;
+    /* border-radius: 9px 9px 0 0; */
+    background: url(/IMAGES/person_png_1.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.feeds4{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+    border-radius: 9px ;
+    background: #fff;
+    height: 800px;
+    margin-top: 20px;
+}
+.man{
+    width: 100%;
+    height: 500px;
+    /* border-radius: 9px 9px 0 0; */
+    background: url(/IMAGES/person_3.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.feeds5{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+    border-radius: 9px ;
+    background: #fff;
+    height: 800px;
+    margin-top: 20px;
+}
+.pexels{
+    width: 100%;
+    height: 500px;
+    /* border-radius: 9px 9px 0 0; */
+    background: url(/IMAGES/pexels-mike-bird-112460.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.flex{
+    width: 100%;
+    display: flex;
+}
+.img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(/IMAGES/person_2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+.down{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.down ul{
+    display: inline-flex;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.i{
+    display: none;
+}
+.down ul li{
+    margin-inline: 35px;
+    height: 50px;
+    padding: 14px 10px 10px 8px;
+    border-radius: 9px;
+}
+.down ul li:hover{
+    background: rgb(155, 151, 151);
+    cursor: pointer;
+}
+.down i{
+    font-size: 20px;
+    margin-right: 9PX;
+}
+.down i:hover{
+    cursor: pointer;
+}
+.pro{
+    width: 100%;
+    height: 100px;
+    border-radius: 9px 9px 0 0;
+    background: url(/IMAGES/pexels-mike-bird-112460.jpg);
+}
+.pro1{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: url(/IMAGES/person_2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 77px;
+}
+.pen{
+    margin-left: 200px;
+
+}
+.move{
+    padding-top: 40px;
+}
+.row-btn{
+    width: 100%;
+    display: block;
+    margin: 5px 10px 10px 5px;
+}
+.profile-pic1{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(/IMAGES/sterling-landing-page-01-03.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.profile-pic2{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(/IMAGES/contact.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.profile-pic3{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(/IMAGES/images\ \(4\).jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.btn-img{
+    margin-left: 20px;
+}
+.btn-img button:hover{
+    cursor: pointer;
+}
+.btn-img button{
+    /* /* height: 30px;
+    /* width: 60%; */ 
+    width: 60%;
+    border-radius: 20px;
+    height: 30px;
+    border: 1px solid gray;
+}
+.pic-btn2{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(/IMAGES/person_png_1.png);
+    background-size: cover;
+    background-color: rgb(109, 107, 107);
+    background-position: center;
+    margin-top: 10px;
+}
+.pic-btn3{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(/IMAGES/sterling-landing-page-01-02.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.pic-btn4{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(/IMAGES/person_1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.pic2{
+    width: 100%;
+    display: flex;
+}
+.follow{
+    display: block;
+    width: 100%;
+    margin-left: 50px;
+}
+.div{
+    width: 100%;
+    /* display: flex; */
+}
+.fol{
+    margin-top: 10px;
+    margin-left: 120px;
+}
+.fol i{
+    margin-right: 5px;
+}
+.follow button{
+    width: 160%;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background: #fff;
+}
+.follow button:hover{
+    cursor: pointer;
+    background: #e2e0e0;
+}
+.feed1{
+    width: 100%;
+    height: 500px;
+    /* border-radius: 9px 9px 0 0; */
+    background: url(/IMAGES/Ellas.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.feeds1{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+    border-radius: 9px ;
+    background: #fff;
+    height: 800px;
+    margin-top: 20px;
+}
+.break p{
+    text-align: center;
+}
+.news{
+    display: flex;
+    width: 100%;
+    margin: 14px;
+    
+}
+.ashley{
+    display: flex;
+    width: 70%;
+    margin: 14px;
+    
+}
+.details{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.cancel{
+    float: right;
+    display: flex;
+    /* margin: 20px; */
+    font-size: 24px;
+}
+.cancel1{
+float: right;
+display: block;
+}
+.ashley-pic{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(/IMAGES/Ellas.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.ashley-pic1{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(/IMAGES/person_4.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.ashley-pic2{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(/IMAGES/person_png_1.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.ashley-pic3{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(/IMAGES/person_3.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.ashley-pic4{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(/IMAGES/tesla-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.word{
+    margin: 20px;
+}
+
+.small{
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+.react1{
+    margin-top: 40px;
+    display: flex;
+    height: 100px;
+    border-bottom: 1px solid gray;
+    justify-content: space-around;
+    width: 100%;
+    /* align-items: center; */
+}
+
+.react1 i{
+    list-style-type: none;
+    align-items: center;
+    font-size: 25px;
+}
+
+.react1 ul li{
+    display: inline-block;
+    margin-top: 7px;
+    justify-content: space-around;
+    padding-inline: 30px;
+}
+.container-left-side-bar{
+    display: block;
+}
+
+.container-right-side-bar{
+    display: block;
+}
+
+.secure-it{
+    width: 100%;
+    /* border: 1px solid #333; */
+    background: #fff;
+    height: 180px;
+    margin-top: 20px;
+    border-radius: 9px ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+.secure-it h4{
+    font-family: sans-serif;
+    font-size: 15px;
+    padding-left: 14px;
+    padding-top: 13px;
+    color: rgba(8, 145, 199);
+}
+
+.discover-more{
+    width: 100%;
+    margin-top: 27px;
+    height: 63px;
+    display: block;
+    border-radius: 0 0 9px 9px;
+    color: gray;
+    border-top: 1px solid gray;
+    text-align: center;
+    justify-content: center;
+}
+.me{
+    float: right;
+    padding: 5px 8px 0 5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+.me:hover{
+    background: #959393;
+}
+.discover-more h3{
+    padding-top: 20px;
+}
+.discover-more:hover{
+    background: #c4bebe;
+    cursor: pointer;
+}
+.add{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: right;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 3px;
+
+}
+.left{
+    float: right;
+    margin: 10px;
+    font-size: 15px;
+}
+.add:hover{
+    cursor: pointer;
+    background: #959393;
+}
+.try{
+    width: 100%;
+    background: #fff;
+    border-radius: 9px ;
+    margin-top: 20px;
+    /* border: 1px solid #333; */
+    height: 270px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: sticky;
+    top: 170px;
+    display: block;
+}
+.show{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    background: url(/IMAGES/sterling-landing-page-01-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.show1{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    /* background: url(/IMAGES/no-4.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+.circle1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.claim{
+    width: 60%;
+    height: 40px;
+    border-radius: 20px;
+    background: #fff;
+    margin-left: 55px;
+    color: rgb(32, 82, 207);
+    border: 1px solid rgb(32, 82, 207);
+    margin-top: 30px;
+}
+.line2{
+    width: 80%;
+    border-bottom: 1px solid gray;
+    height: 15px;
+}
+.line1{
+    width: 100%;
+    display: flex;
+}
+.small{
+    width: 75%;
+    margin-left: 60px;
+
+}
+.inner{
+    display: inline-flex;
+    margin: 9px;
+}
+.as1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    padding: 4px;
+}
+.as2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: blue;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+.as3{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 4px;
+    background: red;
+    margin-bottom: 8px;
+}
+.premium-media-1{
+    display: none;
+}

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootsrap/bootsrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/bootsrap/bootsrap/css/bootstrap.min.css">
+    <script src="/bootsrap/bootsrap/js/bootstrap.js"></script>
+    <script src="/bootsrap/bootsrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/icons/fontawesome-free-6.4.2-web/css/all.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        background: #f0ebeb;
+    }
+
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    @media viewport and (max-width:100%) {
+        #wrapper {
+            width: 100%;
+        }
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        background: #1a73e8;
+        align-items: center;
+        padding: px;
+
+    }
+
+    strong {
+        color: #f7f7f7;
+        padding-left: 50px;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        padding-left: 200px;
+    }
+
+    ul li {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    header {
+        width: 100%;
+        background: #f7f7f7;
+        display: flex;
+        align-items: center;
+        box-shadow: 2px 2px 2px 2px rgb(184, 187, 240);
+        position: sticky;
+        top: 0px;
+        bottom: 9px;
+        backdrop-filter: blur(2px);
+    }
+
+    .logo {
+        width: 200px;
+        padding-left: 150px;
+    }
+
+    nav ul {
+        display: flex;
+        padding: 20px 1px;
+        padding-left: 330px;
+        position: sticky;
+
+    }
+
+    nav ul li:hover {
+        color: rgb(190, 138, 70);
+        cursor: pointer;
+    }
+
+    nav ul li {
+        color: #1a73e8;
+        cursor: pointer;
+    }
+
+    .container {
+        padding: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    .row-flexbar {
+        display: flex;
+        width: 100%;
+        /* justify-content: space-between; */
+        /* padding: 6px 0; */
+    }
+
+    .col-md-8 {
+        width: 100%;
+        /* background: url(/IMAGES/17\ -\ Copy.jpg) no-repeat; */
+        height: 130px;
+        background: #f7f7f7;
+        border-radius: 8px;
+        margin: 40px 0px;
+        /* background-position: top center; */
+
+
+    }
+
+    .ul {
+        padding-left: 390px;
+        display: flex;
+        list-style-type: none;
+        margin: 5px 8px;
+    }
+
+    .ul li {
+        padding: 10px;
+    }
+
+    .form-group {
+        padding-left: 400px;
+        width: 100%;
+    }
+
+    .showcase {
+        width: 100%;
+        background: #f7f7f7;
+        height: 600px;
+    }
+
+    .row-cardflex {
+        width: 100%;
+        display: flex;
+        padding: 30px;
+        height: 300px;
+        justify-content: space-between;
+    }
+
+    .col-md-2 {
+        width: 30%;
+        box-shadow: 2px 2px 2px 2px #858181;
+        height: 500px;
+        background: rgb(226, 207, 207);
+        border-radius: 9px;
+        align-items: center;
+
+    }
+
+    #myDIV {
+        animation: mymov;
+    }
+
+    .card-img-1 {
+        background: url(/IMAGES/11.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card-text {
+        align-items: center;
+        padding-left: 2px;
+    }
+
+    b-1 {
+        padding-left: 130px;
+    }
+
+    p {
+        justify-content: center;
+    }
+
+    .sidenav {
+        width: 90px;
+        position: fixed;
+        top: 300px;
+        height: 130px;
+        border-radius: 9px;
+        left: 10px;
+        border: 1px solid;
+        background: #eee;
+        box-shadow: 1px 1px 2px 2px rgb(119, 117, 117);
+        overflow-x: hidden;
+        padding: 10px 0;
+    }
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 10px;
+        color: #2196F3;
+        display: block;
+    }
+
+    .sidenav a:hover {
+        color: #064579;
+    }
+
+    .main {
+        margin-left: 140px;
+        /* Same width as the sidebar + left position in px */
+        font-size: 28px;
+        /* Increased text to enable scrolling */
+        padding: 0px 10px;
+    }
+
+    @media screen and (max-height: 768px) {
+        .sidenav {
+            padding-top: 1px;
+        }
+
+        .sidenav a {
+            font-size: 11px;
+        }
+
+        [class*="columns: ;"] {
+            width: 10%;
+        }
+
+    }
+
+    .card-img-2 {
+        background: url(/IMAGES/9\ -\ Copy.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card-img-3 {
+        background: url(/IMAGEs/10.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .showcase-1 {
+        width: 100%;
+        background: #eef1f5;
+        height: auto;
+    }
+
+    .row-container {
+        /* display: flex; */
+        width: 100%;
+        height: 700px;
+        align-items: center;
+        /* padding-left: 250px; */
+        justify-content: center;
+    }
+
+    .col-md-6 {
+        height: 600px;
+        padding-top: 20px;
+        width: 100%;
+        box-shadow: 2px 2px 2px 2px solid rgb(27, 21, 21);
+        padding-left: 230px;
+    }
+
+    .card-img-4 {
+        background: url(/IMAGES/getcertified.jpg)no-repeat;
+        height: 600px;
+        width: 50%;
+        padding-left: 800px;
+        border: 5px solid rgb(117, 110, 110);
+        box-shadow: 3px 3px 3px 3px;
+    }
+
+    .row-cardflex-2 {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .col-md-3 {
+        width: 30%;
+        box-shadow: 2px 2px 2px 2px #464444;
+        height: 400px;
+        background: rgb(199, 195, 195);
+        border-radius: 9px;
+        align-items: center;
+
+    }
+
+    .col-md-10 {
+        width: 100%;
+        height: 900px;
+    }
+
+    hr {
+        background: white;
+    }
+
+    b {
+        padding-left: 95px;
+    }
+
+    .img {
+        padding-top: 60px;
+        width: 100%;
+        padding-left: 225px;
+        height: 900px;
+    }
+
+    .footer {
+        width: 100%;
+        height: 450px;
+        display: block;
+        background: rgb(56, 53, 53);
+    }
+
+    .container-has-display-block {
+        padding-top: 0;
+        padding-bottom: 0px;
+        padding-left: 600px;
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .container-has-display-block li {
+        list-style-type: none;
+        color: rgb(212, 210, 210);
+        padding: 3px 0;
+    }
+
+    .container-has-display-block li:hover {
+        color: rgb(247, 244, 240);
+        cursor: pointer;
+    }
+
+    .end-header {
+        width: 100%;
+        height: 1px;
+        background: rgb(190, 189, 189);
+    }
+
+    .center {
+        color: rgb(189, 186, 186);
+        padding-top: 20px;
+        padding-left: 200px;
+
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+
+        <div class="header">
+            <strong>Our free WordPress themes are downloaded over 5 MILLION times.</strong>
+            <h5 style=":hover::after{
+                color: #b1a7a7;
+            }"><a href="#" style="color: black;font-size: 14px;">Get Started!</a></h5>
+            <ul>
+                <li><a href="#" style="color: black;"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#" style="color: black;"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" style="color: black;"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" style="color: black;"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#" style="color: black;"><i class="fa-solid fa-rss"></i></a></li>
+                <li><a href="#" style="color: black;"><i class="fa-brands fa-github-alt"></i></a></li>
+                <li><a href="#" style="color: black;"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <header class="bg-transparent">
+            <div class="logo"><img src="/IMAGES/colorlib-logo-top.webp" width="200px"></div>
+            <nav>
+                <ul>
+                    <li><a href="#"></a>Home</li>
+                    <li><a href="#"></a>Support</li>
+                    <li><a href="#"></a>Free Themes</li>
+                    <li><a href="#"></a>Premium Themes</li>
+                    <li><a href="#"></a>Website Template</li>
+                    <li><a href="#"></a>Blog</li>
+                    <li><a href="#"></a>Account</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="row-flexbar">
+                <div class="col-md-8">
+                    <h4 class="text-center">search for all or available templates below</h4>
+                    <div class="ul font-monospace">
+                        <li><i class="fa-brands fa-html5"></i>HTML </li>
+                        <li><i class="fa-brands fa-bootstrap"></i>Bootsrap </li>
+                        <li><i class="fa-brands fa-java"></i>Javascrip </li>
+                        <li><i class="fa-brands fa-python"></i>python</li>
+                    </div>
+                    <div class="form-group">
+                        <form class="d-flex w-50 " role="search"><br>
+                            <input class="form-control" type="search" placeholder="search" aria-label="search">
+                            <br>
+                            <br> <button class="btn btn-outline-success" type="submit">search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="showcase">
+            <div class="row-cardflex">
+                <div class="col-md-2">
+                    <div class="card-img-1"></div>
+                    <div class="card-text">
+                        <h5 class="text-center">we offer all kinds of cattle product</h3>
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae
+                                distinctio animi numquam laudantium maiores nulla sunt deleniti doloremque facere.</p>
+                            <b-1>
+                                <button class="btn btn-primary ">Apply now</button>
+                            </b-1>
+                    </div>
+                </div>
+                <div class="sidenav bg-transparent">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#clients">Clients</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="col-md-2">
+                    <div class="card-img-2"></div>
+                    <div class="card-text">
+                        <h5 class="text-center">birds categories</h5>
+                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem sunt
+                            nisi sapiente adipisci numquam perspiciatis maxime unde vero accusamus delectus?</p>
+                        <b-1>
+                            <button class="btn btn-secondary ">Apply now</button>
+                        </b-1>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card-img-3"></div>
+                    <div class="card-text">
+                        <h5 class="text-center">pigs </h5>
+                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem sunt
+                            nisi sapiente adipisci numquam perspiciatis maxime unde vero accusamus delectus?</p>
+                        <b-1>
+                            <button class="btn btn-success">Apply now</button>
+                        </b-1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="showcase-1">
+            <div class="row-container">
+                <div class="col-md-6">
+                    <div class="card-img-4">
+                    </div>
+                    <!-- <p>llllllllll</p> -->
+                </div>
+            </div>
+            <h4 class="text-center">learn codding with colorlib online </h4>
+            <p class="text-center">we only charge as low as you can afford</p>
+            <div class="row-cardflex-2">
+                <div class="col-md-3">
+                    <h5 class="text-center">
+                        <hr>SINGLE
+                    </h5>
+                    <hr>
+                    <h1 class="text-center"><i class="fa-solid fa-dollar-sign"></i>16</h2><br><br><br>
+                        <hr>
+                        <P class="text-center">lifetime....<i class="fa-regular fa-circle-xmark"></i></P>
+                        <hr>
+                        <p class="text-center"><i class="fa-solid fa-check-double"></i> </p>
+                        <hr class="bg-danger">
+                        <b>
+                            <h4 class=" btn btn-primary text-center">buy now</h4>
+                        </b>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-center">
+                        <hr>MEMBERSHIP
+                    </h5>
+                    <hr>
+                    <h1 class="text-center"><i class="fa-solid fa-dollar-sign"></i>25</h2><br><br><br>
+                        <hr>
+                        <p class="text-center"><i class="fa-solid fa-check-double"></i> </p>
+                        <hr class="bg-danger">
+                        <P class="text-center"><i class="fa-regular fa-circle-xmark">....</i>lifetime</P>
+                        <hr>
+                        <b>
+                            <h4 class=" btn btn-primary text-center">buy now</h4>
+                        </b>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-center">
+                        <hr>LIFETIME
+                    </h5>
+                    <hr>
+                    <h1 class="text-center"><i class="fa-solid fa-dollar-sign"></i>59.99</h2><br><br><br>
+                        <hr>
+                        <p class="text-center"><i class="fa-solid fa-check-double"></i> </p>
+                        <hr class="bg-danger">
+                        <p class="text-center"><i class="fa-solid fa-check-double"></i> </p>
+                        <hr class="bg-danger">
+
+                        <b>
+                            <h4 class=" btn btn-primary text-center">buy now</h4>
+                        </b>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="img">
+                    <img src="/IMAGES/glint-simple-website-template-353x292.jpeg" alt="" width="80%">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="flex">
+                <img src="/IMAGES/colorlib-logo-white.png.webp" alt=""
+                    style="padding-top: 8px; width: 300px; padding-left: 100px;">
+            </div>
+            <p style="padding-left: 60px;color: #b1a7a7; padding-top: 15px;">we change every thing WordPress </p>
+            <div class="container-has-display-block">
+                <li>About Colorlid</li>
+                <li>Advertise</li>
+                <li>WordPress Themes</li>
+                <li>Bootstrap Templates</li>
+                <li>Website Templates</li>
+                <li>Support Forum</li>
+                <li>-Support Policy</li>
+                <li>Contact Us</li>
+                <li>We Are Hiring!</li>
+            </div>
+            <div class="end-header">
+                <div class="center">Copyright 2013-2023 colorlib.com | operated by Divilab LLC Privacy Policy | Site
+                    Terms & Disclosures.Hosted by Kinsta</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

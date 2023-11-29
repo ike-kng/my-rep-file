@@ -1,0 +1,93 @@
+#wrapper{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+}
+.flex-image{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+
+
+}
+.image1{
+    width: 30%;
+    height: 300px;
+    background: #fff;
+    border-radius: 15px ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 9px;
+
+}
+
+.image2{
+    width: 30%;
+    height: 300px;
+    background: #fff;
+    border-radius: 15px ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 9px;
+
+}
+
+.word {
+    display: block;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 70px;
+    backface-visibility: hidden;
+    text-align: center;
+    /* opacity: 0; */
+    border-radius: 9px 9px 9px;
+    /* padding: 130px 20px 0 20px; */
+    color: #d1e8fc;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.word:hover {
+    opacity: 1;
+    display: block;
+}
+
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+.box1 {
+    width: 80%;
+    opacity: 1;
+    height: 360px;
+    border-radius: 9px;
+    margin-top: 70px;
+    background-image: url(/IMAGES/pickup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* .car1{
+    width: 60%;
+    height: 400px;
+    background: url(/IMAGES/193-1939695_ferrari-f430-laferrari-car-ferrari-luxury-car-transparent-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */

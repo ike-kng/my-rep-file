@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/icons/fontawesome-free-6.4.2-web/css/all.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f7f7f7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #wrapper {
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #fff;
+            width: 100%;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            /* border: 1px solid #333; */
+        }
+
+        .flexnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 20px 10px;
+            list-style-type: none;
+        }
+
+        .logo-search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            padding: 10px 9px;
+        }
+
+        .logo .fa-linkedin {
+            color: rgb(45, 59, 215);
+            font-size: 24px;
+        }
+
+        input[type=search] {
+            width: 200px;
+            height: 30px;
+            padding: 5px;
+            border: none;
+            background: #dde7f1;
+            outline: none;
+        }
+
+        input[type=search]:focus {
+            width: 250px;
+            transition: 0.3s all ease;
+        }
+
+        .premium {
+            border-left: 1px solid #d7d7d7;
+        }
+
+        .wrapper-container {
+            width: 85%;
+            margin: 3% 8%;
+        }
+
+        .flexcontent {
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+
+        .left-side-bar {
+            width: 20%;
+        }
+
+        .leftbox {
+            width: 100%;
+            /* border: 1px solid #333; */
+            background: #fff;
+            height: 450px;
+            border-radius: 9px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        .right-side-bar {
+            width: 20%;
+        }
+
+        .rightbox {
+            width: 100%;
+            /* border: 1px solid #333; */
+            background: #fff;
+            height: 450px;
+            border-radius: 9px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        .middle-bar {
+            width: 50%;
+        }
+
+        .middle-box {
+            width: 100%;
+            /* border: 1px solid #333; */
+            background: #fff;
+            /* height: 450px; */
+            border-radius: 9px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        .middlebox2 {
+            width: 100%;
+            /* border: 1px solid #333; */
+            background: #fff;
+            margin-top: 10px;
+            /* height: 450px; */
+            border-radius: 9px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        .top-img {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+
+            width: 100%;
+            height: 80px;
+            background: url(/images/pexels-photo-951318.jpeg);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .top-img2 img {
+            border: 4px solid #fff;
+            border-radius: 100px;
+            width: 100px;
+            height: 100px;
+            left: 150px;
+            bottom: 350px;
+            justify-content: center;
+            background: #fff;
+            position: absolute;
+        }
+
+        .text {
+            margin-top: 70px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+
+        }
+
+        .text .container {
+            margin-bottom: 10px;
+        }
+
+        .content1 {
+            text-align: left;
+            border-bottom: 0.5px solid #333;
+            padding: 10px 9px;
+
+        }
+
+        .content2 {
+            text-align: left;
+            border-bottom: 0.5px solid #333;
+            padding: 10px 9px;
+        }
+
+        .content3 {
+            padding: 10px 9px;
+
+        }
+
+        .content1 .fa-user-plus {
+            position: relative;
+            left: 160px;
+            bottom: 20px;
+        }
+
+        .flex {
+            text-align: center;
+        }
+
+        .down {
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        .feed-img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .feed {
+            display: flex;
+            margin-top: 20px;
+            text-align: cente;
+        }
+
+        .feed5 {
+            padding: 10px 10px;
+        }
+
+        button {
+            width: 100px;
+            border-radius: 15px;
+            height: 25px;
+            margin-top: 10px;
+        }
+
+        .img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .middlebox3 {
+            padding: 10px 9px;
+            margin: 10px 10px;
+        }
+
+        .middlebox2-img {
+            width: 60%;
+            height: 120%px;
+            /* margin-left: 25%; */
+        }
+
+        .middle-box1{
+            width: 100%;
+            /* border: 1px solid #333; */
+            background: #fff;
+            /* height: 450px; */
+            border-radius: 9px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            margin-top: 20px;
+            padding: 10px;
+            
+        }
+        .img-txt{
+            display: flex;
+        }
+        .txt{
+           margin: 10px;
+        }
+        
+        .sub-txt {
+            display: flex;
+        }
+
+        .fa-plus {
+            font-size: 10px;
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+
+        .icon-link a {
+            text-decoration: none;
+            font-weight: 570;
+            color: #0a66c2;
+        }
+        .upload-img{
+            width: 100%;
+            height: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="container flexnav">
+                <div class="logo-search">
+                    <div class="logo">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+
+                    <div class="search">
+                        <form action="">
+                            <input type="search" placeholder="search">
+                            <input type="submit" value="search">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            <li><i class="fas fa-house-user"></i><br>Home</li>
+                            <li><i class="fas fa-satellite-dish"></i><br>Network</li>
+                            <li><i class="fas fa-briefcase"></i><br>Jobs</li>
+                            <li><i class="fas fa-comment-dots"></i><br>Messages</li>
+                            <li><i class="fas fa-bell"></i><br>Notifications</li>
+                            <li><i class="fas fa-user"></i><br>Me</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="premium">
+                    <nav>
+                        <ul>
+                            <li>For Business</li>
+                            <li>Try Premium</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="content">
+            <div class="wrapper-container flexcontent">
+                <div class="left-side-bar">
+                    <div class="leftbox">
+                        <div class="top-img"></div>
+                        <div class="top-img2">
+                            <img class="images" src="images/IMG_1099.JPG" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="container">
+                                <p>Salam abiola</p>
+                                <p>Haybee</p>
+                                <p>Web deigner</p>
+                                <p>Biliion dollar</p>
+                            </div>
+                        </div>
+                        <div class="content1">
+                            <h4>connection</h4>
+                            <p>Grow your Network</p>
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="content2">
+                            <p>Access exclusive tools & insights</p>
+                            <h4>Try Premium for NGN0
+                                <hr>
+                            </h4>
+                        </div>
+                        <div class="content3">
+                            <h4><i class="fas fa-bookmark"></i>My Items</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="middle-bar">
+                    <div class="middle-box">
+                        <div class="post">
+                            <div class="flex">
+                                <div class="img"></div>
+                                <form action="">
+                                    <input type="search" placeholder="search">
+                                    <input type="submit" value="start a post">
+                                </form>
+                            </div>
+                            <div class="down">
+                                <nav>
+                                    <ul>
+                                        <li> <i class="fa fa-image" style="color:rgba(236,95,13)"></i><br>Pictures
+                                            <Menu></Menu>
+                                        </li>
+                                        <li> <i class="fa fa-calendar-days" style="color:#0a66c2"></i><br>Event</li>
+                                        <li> <i class="fa fa-file-text" style="margin-left:20px;"></i><br>Write article
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle-box1">
+                        <div class="main">
+                            <div class="img-txt">
+                                <div class="img">
+                                    <img class="img" src="images/pexels-vitali-adutskevich-14174058.jpg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <div class="sub-txt">
+                                        <h4>Abiola Salam .</h4>
+                                        <p style="color: #7d7777;">3rd </p>
+                                        <i class="fas fa-plus"></i>
+                                    </div> 
+                                    <p>Entry Level software developer and architect</p>
+                                </div>
+                            </div>
+    
+                            <div class="icon-link"> 
+                                <a href="#"><i class="fas fa-plus"></i> &nbsp;Follow </i></a>
+                            </div>
+                        </div>
+                        <div class="upload">
+                            <img class="upload-img" src="images/IMG_1099.JPG" alt="">
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="right-side-bar">
+                    <div class="rightbox">
+                        <div class="right-side">
+                            <h2>Add to your feed</h2>
+                            <div class="feed">
+                                <div class="feed1">
+                                    <img class="feed-img" src="images/pexels-vitali-adutskevich-14174058.jpg" alt="">
+                                </div>
+                                <div class="feed2">
+                                    <h3>OpenAi</h3>
+                                    <p>Company . researches</p>
+                                    <button>Follow</button>
+                                </div>
+                            </div>
+                            <div class="feed">
+                                <div class="feed1">
+                                    <img class="feed-img" src="images/pexels-vitali-adutskevich-14174058.jpg" alt="">
+                                </div>
+                                <div class="feed2">
+                                    <h3>Maven Analytics</h3>
+                                    <p>Company . E learning</p>
+                                    <button>Follow</button>
+                                </div>
+                            </div>
+                            <div class="feed">
+                                <div class="feed1">
+                                    <img class="feed-img" src="images/pexels-vitali-adutskevich-14174058.jpg" alt="">
+                                </div>
+                                <div class="feed2">
+                                    <h3>Opay</h3>
+                                    <p>Company . Financial</p>
+                                    <button>Follow</button>
+                                </div>
+                            </div>
+                            <div class="feed5">
+                                <h4>View all recomendation</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+header {
+    width: 100%;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px rgb(184, 187, 240);
+    backdrop-filter: blur(2px);
+}
+
+.logo {
+    width: 200px;
+    padding-left: 150px;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px 1px;
+    padding-left: 600px;
+    list-style-type: none;
+
+}
+
+nav ul li:hover {
+    color: rgb(190, 138, 70);
+    cursor: pointer;
+}
+
+nav ul li {
+    color: #1a73e8;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.showcase{
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(rgba(19, 12, 12, 0.7), rgba(0, 0, 0, 0.5)), url(/IMAGES/showcase3.jpeg) no-repeat;
+    background-position: center ;
+    background-size: cover;
+}
+.content{
+    width: 100%;
+    justify-content: center;
+}
+.row-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px;
+}
+.col-md-6{
+    width: 47%;
+    justify-content: center;
+    border-radius: 9px;
+    background: rgb(177, 173, 173);
+    height: 600px;
+
+}
+.card-img{
+    width: 100%;
+    height: 400px;
+    background: url(/IMAGES/shutterstock_530884738_\ \(1\).jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.card-text{
+    margin: 29px;
+    height: 300px;
+    align-items: center;
+}
+.row-container2{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 70px;
+    height: 650px;
+}
+.col-md-2{
+    width: 23%;
+    height: 300px;
+    background: rgb(173, 173, 180);
+    border-radius: 8px;
+}
+.card-img1{
+    width: 100%;
+    height: 200px;
+    background: url(/IMAGES/farepaywithmasterslogo.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.card-text1{
+    margin: 8px;
+    height: 100px;
+    /* padding-top: 85px; */
+    text-align: center;
+}
+.card-img2{
+    width: 100%;
+    height: 200px;
+    background: url(/IMAGES/cafe-one.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.card-text2{
+    margin: 15px;
+    height: 30px;
+    text-align: center;
+    /* padding-top:  85px; */
+}
+.card-img3{
+    width: 100%;
+    height: 200px;
+    background: url(/IMAGES/shutterstock_2003149925-1-1536x864.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.card-text3{
+    margin: 15px;
+    height: 30px;
+    text-align: center;
+    /* padding-top: 85px; */
+    
+}
+.card-img4{
+    width: 100%;
+    height: 200px;
+    background: url(/IMAGES/cooperate\ person\ making\ call.jpeg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.card-text4{
+    margin: 15px;
+    height: 30px;
+    text-align: center;
+    /* padding-top: 85px; */
+}
+.footer{
+    width: 100%;
+    height: 500px;
+    background: #0f0f0f;
+}
+.container{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 430px;
+    display: flex;
+    padding-top: 50px;
+    color: white;
+}
+.col-md-4{
+    width: 30%;
+    height: 400px;
+
+}

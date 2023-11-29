@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="linkedin.css">
+    <link rel="stylesheet" href="/icons/fontawesome-free-6.4.2-web/css/all.css">
+</head>
+<style>
+    @media (max-width:330px) {
+        body {
+            font-size: 13px;
+        }
+
+        .post ul li {
+            padding-inline: 2px;
+        }
+
+        .main-menu1 {
+            font-size: 5px;
+            display: none;
+        }
+    }
+
+    @media (max-width: 717px) {
+
+        .container flexnavs,
+        .content,
+        .wrapper-container flexcontent,
+        .newsfeed {
+            width: 100%;
+            display: block;
+            background: rgb(212, 214, 214);
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            /* border: 1px solid #333; */
+        }
+
+        .wrapper-container {
+            width: 100%;
+            margin: 6% auto;
+            /* border: 1px solid #333; */
+        }
+
+        header {
+            position: sticky;
+            bottom: 30px;
+            border-bottom: 2px solid gray;
+        }
+
+        body {
+            background: rgb(212, 214, 214);
+        }
+
+        .container-right-side-bar,
+        .container-left-side-bar,
+        .right-side-bar,
+        .left-side-bar {
+            display: none;
+        }
+
+        .main-menu nav ul li,
+        input[type=search] {
+            display: none;
+        }
+
+        .fed1,
+        .feeds2,
+        .feeds3,
+        .feeds4,
+        .feeds5,
+        .react,
+        .feed1 {
+            width: 100%;
+            border-radius: 0;
+            font-size: 15px;
+            height: 900px;
+            /* text-align: center; */
+        }
+
+        .react1 i {
+            font-size: 20px;
+        }
+
+        .react1 {
+            font-size: 23px;
+        }
+
+        .react1 ul li {
+            font-size: 15px;
+            padding-inline: 10px;
+        }
+
+        .post {
+            margin-top: 40px;
+            font-size: 20px;
+            border-radius: 0;
+
+
+        }
+
+        .pro {
+            border-radius: 0;
+        }
+
+        .pot1,
+        .form {
+            width: 95%;
+            font-size: 20px;
+
+        }
+
+        .imgpro {
+            width: 50px;
+            height: 50px;
+        }
+
+        .pot1 {
+            margin-left: 10px;
+        }
+
+        .flex {
+            width: 100%;
+        }
+
+        .post i {
+            font-size: 20px;
+        }
+
+        .post ul li {
+            margin-inline: 5px;
+            font-size: 15px;
+        }
+
+        .is {
+            display: none;
+        }
+
+        .line2 {
+            width: 70%;
+        }
+
+        .main-menu2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-menu2 nav ul li {
+            display: inline-block;
+            margin: 10px;
+            font-size: px;
+            list-style-type: none;
+        }
+
+        .main-menu2 i {
+            font-size: 27px;
+        }
+
+        .main-menu2 li:hover {
+            cursor: pointer;
+            margin-top: 7px;
+            /* border-bottom: 3px solid blue; */
+        }
+
+        .i {
+            font-size: 25px;
+            margin-right: 7px;
+            font-weight: bolder;
+            color: black;
+            display: contents;
+        }
+
+        .main-menu2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-menu2 nav ul li {
+            display: inline-block;
+            margin: 10px;
+            font-size: px;
+            list-style-type: none;
+        }
+
+        .main-menu2 i {
+            font-size: 27px;
+        }
+
+        .main-menu2 li:hover {
+            cursor: pointer;
+            margin-top: 7px;
+            /* border-bottom: 3px solid blue; */
+        }
+
+        .i {
+            font-size: 25px;
+            margin-right: 7px;
+            font-weight: bolder;
+            color: black;
+            display: contents;
+        }
+
+        .premium {
+            display: none;
+            float: right;
+            margin-left: 50px;
+            /* display: flex; */
+            font-size: 10px;
+        }
+
+        .container.left-side-bar-media {
+            display: block;
+            border-radius: 0;
+            background: #fff;
+            font-size: 15px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        .left-side-bar-media {
+            display: block;
+            border-radius: 0;
+            font-size: 15px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            background: #fff;
+
+        }
+
+        .secure-it-media {
+            display: block;
+            border-radius: 0;
+            font-size: 15px;
+            background: #fff;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        .secure-it-media h4 {
+            font-family: sans-serif;
+            font-size: 15px;
+            padding-left: 14px;
+            border-radius: 0;
+            padding-top: 13px;
+            color: rgba(8, 145, 199);
+        }
+
+        .down {
+            margin-top: 30px;
+        }
+
+        .down ul li:hover {
+            background: none;
+            color: #0a66c2;
+
+        }
+
+        .is {
+            display: none;
+        }
+
+        .premium-media-1 {
+            display: flex;
+            float: right;
+            margin-top: 8px;
+            margin-right: 10px;
+            font-size: 25px;
+
+        }
+
+        .premium-media-1 ul li {
+            display: inline-block;
+            margin: 10px;
+            list-style-type: none;
+
+        }
+
+        .premium-media-1 ul a li {
+            text-decoration: underline;
+        }
+
+        .premium-media-1 ul li:hover {
+            cursor: pointer;
+        }
+    }
+
+    @media (min-width:718px) {
+        input[type=search] {
+            display: flex;
+            font-size: 17px;
+        }
+
+        .main-menu2{
+            display: none;
+        }
+
+        .fed1,
+        .feeds2,
+        .feeds3,
+        .feeds4,
+        .feeds5,
+        .react,
+        .feed1 {
+            height: 900px;
+            font-size: 17px;
+        }
+
+        .container.left-side-bar-media {
+            display: block;
+            border-radius: 9px;
+            background: #fff;
+            font-size: 17px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        .left-side-bar-media {
+            display: block;
+            border-radius: 9px;
+            font-size: 17px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            background: #fff;
+
+        }
+
+        .main-menu {
+            display: none;
+        }
+
+        .main-menu .i {
+            display: flex;
+        }
+
+
+        .container-right-side-bar,
+        .right-side-bar {
+            display: none;
+        }
+
+        .premium {
+            display: none;
+        }
+
+        .main-menu1 {
+            display: flex;
+            margin-left: 20px;
+        }
+
+
+        .is {
+            display: none;
+            font-size: 20px;
+        }
+
+        .main-menu1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-menu1 nav ul li {
+            display: inline-block;
+            margin: 10px;
+            font-size: 20px;
+            list-style-type: none;
+        }
+
+        /* input[type=search]{
+            width: 90%;
+        } */
+
+        /* input[type=search]:focus{
+            width: 3%;
+            transition: all 0.4s;
+        } */
+
+        .main-menu1 i {
+            font-size: 23px;
+        }
+
+        .main-menu1 li:hover {
+            cursor: pointer;
+            margin-top: 7px;
+            /* border-bottom: 3px solid blue; */
+        }
+
+        .container-left-side-bar,
+        .left-side-bar {
+            display: none;
+            margin-top: 10px;
+            border-radius: o;
+        }
+
+        .left-side-bar {
+            width: 100%;
+            font-size: 20px;
+            height: 580px;
+        }
+
+        .post,
+        .newsfeed,
+        .form {
+            width: 100%;
+            font-size: 20px;
+
+        }
+
+        .post {
+            margin-top: 20px;
+        }
+
+        .newsfeed {
+            margin-left: 40px;
+        }
+
+        .down ul li {
+            margin-inline: 10px;
+        }
+
+        .line2 {
+            width: 70%;
+        }
+
+        .react1 ul li {
+            padding-inline: 30px;
+        }
+
+    }
+
+    @media (min-width:1090) {
+        .premium {
+            display: flex;
+        }
+
+        .main-menu2{
+            display: none;
+        }
+    }
+
+    @media (min-width:940px) {
+
+        input[type=search] {
+            display: flex;
+        }
+
+        .is {
+            display: none;
+        }
+
+        .container.left-side-bar-media {
+            display: none;
+            border-radius: 0;
+            background: #fff;
+            font-size: 15px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        .left-side-bar-media {
+            display: none;
+            border-radius: 0;
+            font-size: 15px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            background: #fff;
+
+        }
+
+        /* .main-menu{
+            display: none;
+        } */
+
+        .container-right-side-bar,
+        .right-side-bar,
+        .main-menu,
+        .premium {
+            display: none;
+        }
+
+        .main-menu1 {
+            display: none;
+            margin-left: 20px;
+        }
+
+
+
+
+        .main-menu {
+            display: flex;
+        }
+
+
+
+        .main-menu .i {
+            display: none;
+        }
+
+
+        .main-menu1 {
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-menu1 nav ul li {
+            display: inline-block;
+            margin: 10px;
+            font-size: 17px;
+            list-style-type: none;
+        }
+
+        /* input[type=search]{
+            width: 90%;
+        } */
+
+        /* input[type=search]:focus{
+            width: 3%;
+            transition: all 0.4s;
+        } */
+
+        .main-menu1 i {
+            font-size: 23px;
+        }
+
+        .main-menu1 li:hover {
+            cursor: pointer;
+            margin-top: 7px;
+            /* border-bottom: 3px solid blue; */
+        }
+
+        .container-left-side-bar,
+        .left-side-bar {
+            display: none;
+            margin-top: 10px;
+            border-radius: o;
+        }
+
+        .left-side-bar {
+            width: 100%;
+            font-size: 15px;
+            height: 580px;
+        }
+
+        .post,
+        .newsfeed,
+        .form {
+            width: 100%;
+
+        }
+
+        .post {
+            margin-top: 20px;
+        }
+
+        .newsfeed {
+            margin-left: 40px;
+        }
+
+        .down ul li {
+            margin-inline: 10px;
+        }
+
+        .line2 {
+            width: 75%;
+        }
+
+        .react1 ul li {
+            padding-inline: 20px;
+        }
+
+        .main-menu2{
+            display: none;
+        }
+    }
+
+    @media (min-width:1103px) {
+
+        input[type=search],
+        .main-menu {
+            display: flex;
+        }
+
+        .main-menu .i {
+            display: none;
+        }
+
+        .is {
+            display: none;
+        }
+
+
+        .container-right-side-bar,
+        .right-side-bar {
+            display: none;
+        }
+
+        .main-menu1 {
+            display: none;
+            margin-left: 20px;
+        }
+
+        .premium {
+            display: none;
+        }
+
+        .main-menu1 {
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-menu1 nav ul li {
+            display: inline-block;
+            margin: 10px;
+            font-size: 20px;
+            list-style-type: none;
+        }
+
+        /* input[type=search]{
+            width: 90%;
+        } */
+
+        /* input[type=search]:focus{
+            width: 3%;
+            transition: all 0.4s;
+        } */
+
+        .main-menu1 i {
+            font-size: 23px;
+        }
+
+        .main-menu1 li:hover {
+            cursor: pointer;
+            margin-top: 7px;
+            /* border-bottom: 3px solid blue; */
+        }
+
+        .container-left-side-bar,
+        .left-side-bar {
+            display: block;
+            margin-top: 10px;
+            width: 70%;
+            border-radius: o;
+        }
+
+        .left-side-bar {
+            width: 100%;
+            font-size: 15px;
+            height: 580px;
+        }
+
+        .post,
+        .newsfeed,
+        .form {
+            width: 100%;
+
+        }
+
+        .post {
+            margin-top: 20px;
+        }
+
+        .newsfeed {
+            margin-left: 40px;
+        }
+
+        .down ul li {
+            margin-inline: 10px;
+        }
+
+        .line2 {
+            width: 70%;
+            font-size: 10px;
+        }
+
+        .react1 ul li {
+            padding-inline: 20px;
+        }
+
+        .main-menu2{
+            display: none;
+        }
+    }
+
+    @media (min-width:1270px) {
+        .premium {
+            display: flex;
+
+        }
+    }
+
+    @media (min-width:1300px) {
+        input[type=search] {
+            display: flex;
+        }
+
+        .main-menu {
+            display: flex;
+        }
+
+        .container-right-side-bar,
+        .right-side-bar {
+            display: none;
+        }
+
+        .main-menu1 {
+            display: none;
+        }
+
+        .premium {
+            display: flex;
+        }
+
+        .container-left-side-bar {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            border-radius: o;
+        }
+
+        .left-side-bar {
+            display: block;
+            width: 100%;
+            font-size: 15px;
+            height: 580px;
+        }
+
+        .is {
+            display: none;
+        }
+
+        .post,
+        .newsfeed,
+        .form {
+            width: 100%;
+
+        }
+
+        .post {
+            margin-top: 20px;
+        }
+
+        .newsfeed {
+            margin-left: 40px;
+        }
+
+        .down ul li {
+            margin-inline: 10px;
+        }
+
+        .line2 {
+            width: 70%;
+            font-size: 10px;
+        }
+
+        .react1 ul li {
+            padding-inline: 20px;
+        }
+
+        .main-menu2{
+            display: none;
+        }
+    }
+
+    @media (min-width=1115px) {
+
+        input[type=search],
+        .main-menu {
+            display: flex;
+        }
+
+        .main-menu .i {
+            display: none;
+        }
+
+
+        .container-right-side-bar,
+        .right-side-bar {
+            display: none;
+        }
+
+        .premium {
+            display: none;
+        }
+
+        .container-left-side-bar {
+            display: block;
+            width: 100%;
+            position: sticky;
+            top: 40px;
+            margin-top: 10px;
+            border-radius: o;
+        }
+
+        .left-side-bar {
+            position: sticky;
+            top: 40px;
+            display: block;
+            width: 100%;
+            font-size: 15px;
+            height: 580px;
+        }
+
+        .post,
+        .newsfeed,
+        .form {
+            width: 100%;
+
+        }
+
+        .post {
+            margin-top: 20px;
+        }
+
+        .newsfeed {
+            margin-left: 40px;
+        }
+
+        .down ul li {
+            margin-inline: 10px;
+        }
+
+        .line2 {
+            width: 70%;
+            font-size: 15px;
+        }
+
+        .react1 ul li {
+            padding-inline: 20px;
+        }
+
+        .is {
+            display: none;
+        }
+
+        .main-menu2{
+            display: none;
+        }
+    }
+
+
+    @media (min-width:1350px) {
+
+        .premium {
+            display: flex;
+        }
+
+        input[type=search],
+        .main-menu {
+            display: flex;
+            font-size: 15px;
+        }
+
+        .left-side-bar {
+            font-size: 14px;
+        }
+
+        .container-right-side-bar,
+        .right-side-bar {
+            display: block;
+        }
+
+
+        .right-side-bar {
+            width: 100%;
+        }
+
+        .main-menu {
+            display: flex;
+        }
+
+        .main-menu .i {
+            display: none;
+        }
+
+        .main-menu1 {
+            display: none;
+        }
+
+
+        .post {
+            width: 100%;
+            margin: 0;
+            margin-right: 0;
+        }
+
+        .newsfeed {
+            width: 48%;
+            margin-left: 0;
+        }
+
+        .container-left-side-bar,
+        .left-side-bar {
+            display: block;
+            margin-top: 0;
+            border-radius: o;
+        }
+
+        .container-left-side-bar {
+            width: 23%;
+        }
+
+        .is {
+            display: none;
+        }
+
+        .fed1,
+        .feeds2,
+        .feeds3,
+        .feeds4,
+        .feeds5,
+        .react,
+        .feed1 {
+            font-size: 15px;
+        }
+
+        .post,
+        .newsfeed,
+        .form {
+            font-size: 15px;
+
+        }
+
+        .newsfeed {
+            width: 50%;
+        }
+
+        .main-menu2{
+            display: none;
+        }
+
+
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <header>
+
+           
+            <div class="container flexnavs">
+
+                <div class="logo-search">
+                    <div class="logo">
+                        <li-icon type="app-linkedin-bug-color-icon" class=" " size="large" role="img"
+                            aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                fill="currentColor" class="mercado-match" width="40" height="40" focusable="false"
+                                style="color:#0a66c2;">
+                                <path
+                                    d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                                </path>
+                            </svg></li-icon>
+
+                    </div>
+                    <div class="search">
+                        <form action="">
+                            <input type="search" placeholder="search">
+
+                        </form>
+                    </div>
+
+
+
+                </div>
+
+                <div class="is">
+                    <a href="/myproject/linkedin/linkedin-search.html" style="color: black;"><i
+                            class="fa fa-search"></i></a>
+                </div>
+
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            <div class="i">
+                                <a href="/myproject/linkedin/linkedin-search.html" style="color: black;"><i
+                                        class="fa fa-search"></i></a>
+                            </div>
+                            <li><i class="fa fa-home"></i><br>Home</li>
+                            <li><i class="fab fa-servicestack"></i><br>Network</i></li>
+                            <li><i class="fa fa-briefcase"></i><br>Jobs</i></li>
+                            <li> <i class="fa fa-comment-dots"></i><br>Message</i></li>
+                            <li><i class="fa fa-bell"></i><br>Notification</i></i></li>
+                            <li><i class="fa fa-user-circle"></i><br>Me <i class="fa fa-caret-down"></i></i></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="main-menu1">
+                    <nav>
+                        <ul>
+                            <li><i class="fa fa-home"></i></li>
+                            <li><i class="fab fa-servicestack"></i></li>
+                            <li><i class="fa fa-briefcase"></i></i></li>
+                            <li> <i class="fa fa-comment-dots"></i></i></li>
+                            <li><i class="fa fa-bell"></i><br></i></i></li>
+                            <li><i class="fa fa-user-circle"></i><i class="fa fa-caret-down"></i></i></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="main-menu2">
+                    <nav>
+                        <ul>
+                            <li><i class="fa fa-home"></i></li>
+                            <!-- <li><i class="fab fa-servicestack"></i></li> -->
+                            <!-- <li><i class="fa fa-briefcase"></i></i></li> -->
+                            <li> <i class="fa fa-comment-dots"></i></i></li>
+                            <!-- <li><i class="fa fa-bell"></i><br></i></i></li> -->
+                            <li><i class="fa fa-user-circle"></i><i class="fa fa-caret-down"></i></i></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="premium-media-1">
+                    <i class="fa solid fa-bars"></i>
+                </div>
+    
+
+
+
+                <div class="premium-media">
+                    <p><i class="fa fa-braille"></i></p>
+                    <p>
+                        Try Premium <br> for free
+                    </p>
+                </div>
+
+                <div class="premium">
+                    <nav>
+                        <ul>
+                            <li> <i class="fa fa-braille" style="margin-left: 30px;"></i><br>For Business <i
+                                    class="fa fa-caret-down"></i></li>
+                            <a style="color: brown;">
+                                <li>Try Premium for <br>
+                                    <p style="margin-left: 35px;">free</p>
+                                </li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+
+
+        <section class="content">
+            <div class="wrapper-container flexcontent">
+                <div class="container-left-side-bar">
+                    <div class="left-side-bar">
+                        <div class="pro">
+                            <div class="move">
+                                <div class="pro1"></div>
+                            </div>
+                        </div>
+                        <div class="pen">
+                            <i class="fa fa-pen" style="padding-top: 25px;"></i><br>
+                            <br>
+                        </div>
+                        <h4 style="text-align: center;">Kingsley dave</h4>
+                        <a href="" style="text-decoration: none;">
+                            <h4 style="margin-left: 10px;">Add photo</h4>
+                            <h4 style="text-align: center; margin-top: 10px;">...
+                        </a></h4>
+
+                        <div class="break">
+                            <hr>
+                            <br>
+                            <p style="color: rgb(89, 89, 236);"><a href=""
+                                    style="text-decoration: none; color: #0a66c2;">
+                                    Edit-profile</a></p>
+                            <br>
+                            <hr>
+                            <br>
+                        </div>
+                        <div class="word">
+                            <div class="me">
+                                <i class="fa fa-user-plus"></i>
+                            </div>
+                            <p>connection <br>
+                            <h4>Grow your network</h4><br>
+                            <hr><br>strenghten your profile with A1 <br> writting Assistant <br><a href="">try
+                                premium for free</a> <br> <br>
+                            <hr> <br><i class="fa fa-bookmark"
+                                style="color: rgb(66, 0, 128); font-size: 15px"></i><strong
+                                style=" font-size: 15px; margin-left: 10px;">My items</strong></p>
+                        </div>
+                    </div>
+
+
+                    <div class="secure-it">
+
+                        <div class="group">
+                            <h4>Groups</h4>
+                        </div>
+
+                        <div class="add">
+                            <i class="fa fa-add"></i>
+                        </div>
+
+
+                        <div class="events">
+                            <h4>Events</h4>
+                        </div>
+
+
+                        <!-- <div class="group"></div> -->
+
+                        <div class="hashtag">
+                            <h4>Followed hashtags</h4>
+                        </div>
+
+                        <div class="discover-more">
+                            <h3>Discover more</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="newsfeed">
+
+                    <div class="container-left-side-bar-media">
+                        <div class="left-side-bar-media">
+                            <div class="pro">
+                                <div class="move">
+                                    <div class="pro1"></div>
+                                </div>
+                            </div>
+                            <div class="pen">
+                                <i class="fa fa-pen" style="padding-top: 25px;"></i><br>
+                                <br>
+                            </div>
+                            <h4 style="text-align: center;">Kingsley dave</h4>
+                            <a href="" style="text-decoration: none;">
+                                <h4 style="margin-left: 10px;">Add photo</h4>
+                                <h4 style="text-align: center; margin-top: 10px;">...
+                            </a></h4>
+
+                            <div class="break">
+                                <hr>
+                                <br>
+                                <p style="color: rgb(89, 89, 236);"><a href=""
+                                        style="text-decoration: none; color: #0a66c2;">
+                                        Edit-profile</a></p>
+                                <br>
+                                <hr>
+                                <br>
+                            </div>
+                            <div class="word">
+                                <div class="me">
+                                    <i class="fa fa-user-plus"></i>
+                                </div>
+                                <p>connection <br>
+                                <h4>Grow your network</h4><br>
+                                <hr><br>strenghten your profile with A1 <br> writting Assistant <br><a href="">try
+                                    premium for free</a> <br> <br>
+                                <hr> <br><i class="fa fa-bookmark"
+                                    style="color: rgb(66, 0, 128); font-size: 15px"></i><strong
+                                    style=" font-size: 15px; margin-left: 10px;">My items</strong></p>
+                            </div>
+                        </div>
+
+
+                        <div class="secure-it-media">
+
+                            <div class="group">
+                                <h4>Groups</h4>
+                            </div>
+
+                            <div class="add">
+                                <i class="fa fa-add"></i>
+                            </div>
+
+
+                            <div class="events">
+                                <h4>Events</h4>
+                            </div>
+
+
+                            <!-- <div class="group"></div> -->
+
+                            <div class="hashtag">
+                                <h4>Followed hashtags</h4>
+                            </div>
+
+                            <div class="discover-more">
+                                <h3>Discover more</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="post">
+                        <div class="flex">
+                            <div class="imgpro">
+                                <div class="img"></div>
+                            </div>
+                            <div class="pot1">
+                                <button class="form">
+                                    <p style="margin-left: 30px;">start a post</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <ul>
+                                <li> <i class="fa fa-image" style="color: rgb(236, 95, 13);"></i>menu</li>
+                                <li> <i class="fa fa-calendar-days" style="color: #0a66c2;"></i>event</li>
+                                <li> <i class="fa fa-outdent"
+                                        style="margin-left: 20px; color: rgb(255, 68, 0);"></i>write article</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="line1">
+                        <div class="line2"></div>
+                        <p style="margin-top: 6px; margin-left: 5px; ">sort by: <strong style="margin-top: 5px;">Top <i
+                                    class="fa fa-caret-down"></i></strong></p>
+                    </div>
+
+
+                    <div class="feeds2">
+                        <div class="cancel">
+                            <div class="p" style=" margin-bottom: 10px;">
+                                ...
+                            </div>
+                            <div class="x" style="margin: 9px; margin-top: 7px;">
+                                <p><i class="fa fa-xmark"></i></p>
+                            </div>
+                        </div>
+
+                        <div class="do" style="margin: 6px;">
+                            <h3 style="margin-left: 8px;">Daniels</h3>
+                            <p>Do like comment or repost</p>
+                        </div>
+                        <br>
+                        <hr>
+
+                        <div class="cancel">
+                            <b style="font-size: 15px; padding-top: 40px; margin-right:10px; color: rgb(52, 52, 217);">+
+                                Follow</b>
+                        </div>
+
+                        <div class="ashley">
+                            <div class="ash">
+                                <div class="ashley-pic1">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h4>Daniela. <applet>4th +</applet>
+                                </h4>
+                                <p>Join daniela now . +211(676777555) <br>
+                                    <br>
+
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="daniella"></div>
+                        <div class="small">
+                            <div class="inner">
+                                <div class="as1">
+                                    <div class="as2">
+                                        <div class="as3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="react1">
+                            <ul>
+                                <li><i class="fa-regular fa-thumbs-up"></i>..1K</li>
+                                <li><i class="fa-regular fa-message"></i>comment</li>
+                                <li><i class="fa-regular fa-heart"></i>400</li>
+                                <li><i class="fa-regular fa-paper-plane"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feeds3">
+                        <div class="cancel">
+                            <div class="p" style=" margin-bottom: 10px;">
+                                ...
+                            </div>
+                            <div class="x" style="margin: 9px; margin-top: 7px;">
+                                <p><i class="fa fa-xmark"></i></p>
+                            </div>
+                        </div>
+
+                        <div class="do" style="margin: 6px;">
+                            <h3 style="margin-left: 8px;">Ashley Daniels</h3>
+                            <p>Do like comment or repost</p>
+                        </div>
+                        <br>
+                        <hr>
+
+                        <div class="cancel">
+                            <b style="font-size: 15px; padding-top: 40px; margin-right:10px; color: rgb(52, 52, 217);">+
+                                Follow</b>
+                        </div>
+
+                        <div class="ashley">
+                            <div class="ash">
+                                <div class="ashley-pic2">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h4>ASHLEY. <applet>4th +</applet>
+                                </h4>
+                                <p>product at AUX . founder <br> of global
+                                    <br>
+
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="computer"></div>
+                        <div class="small">
+                            <div class="inner">
+                                <div class="as1">
+                                    <div class="as2">
+                                        <div class="as3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="react1">
+                            <ul>
+                                <li><i class="fa-regular fa-thumbs-up"></i>..1K</li>
+                                <li><i class="fa-regular fa-message"></i>comment</li>
+                                <li><i class="fa-regular fa-heart"></i>400</li>
+                                <li><i class="fa-regular fa-paper-plane"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feeds4">
+                        <div class="cancel">
+                            <div class="p" style=" margin-bottom: 10px;">
+                                ...
+                            </div>
+                            <div class="x" style="margin: 9px; margin-top: 7px;">
+                                <p><i class="fa fa-xmark"></i></p>
+                            </div>
+                        </div>
+
+                        <div class="do" style="margin: 6px;">
+                            <h3 style="margin-left: 8px;">Ashley Daniels</h3>
+                            <p>Do like comment or repost</p>
+                        </div>
+                        <br>
+                        <hr>
+
+                        <div class="cancel">
+                            <b style="font-size: 15px; padding-top: 40px; margin-right:10px; color: rgb(52, 52, 217);">+
+                                Follow</b>
+                        </div>
+
+                        <div class="ashley">
+                            <div class="ash">
+                                <div class="ashley-pic3">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h4>ASHLEY. <applet>4th +</applet>
+                                </h4>
+                                <p>product at AUX . founder <br> of global
+                                    <br>
+
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="man"></div>
+                        <div class="small">
+                            <div class="inner">
+                                <div class="as1">
+                                    <div class="as2">
+                                        <div class="as3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="react1">
+                            <ul>
+                                <li><i class="fa-regular fa-thumbs-up"></i>..1K</li>
+                                <li><i class="fa-regular fa-message"></i>comment</li>
+                                <li><i class="fa-regular fa-heart"></i>400</li>
+                                <li><i class="fa-regular fa-paper-plane"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feeds5">
+                        <div class="cancel">
+                            <div class="p" style=" margin-bottom: 10px;">
+                                ...
+                            </div>
+                            <div class="x" style="margin: 9px; margin-top: 7px;">
+                                <p><i class="fa fa-xmark"></i></p>
+                            </div>
+                        </div>
+
+                        <div class="do" style="margin: 6px;">
+                            <h3 style="margin-left: 8px;">we are tesla</h3>
+                            <p>Do like comment or repost</p>
+                        </div>
+                        <br>
+                        <hr>
+
+                        <div class="cancel">
+                            <b style="font-size: 15px; padding-top: 40px; margin-right:10px; color: rgb(52, 52, 217);">+
+                                Follow</b>
+                        </div>
+
+                        <div class="ashley">
+                            <div class="ash">
+                                <div class="ashley-pic4">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h4>Tesla company. limited <applet>2th +</applet>
+                                </h4>
+                                <p>best online vehicle published <br> of tesla company.LTD
+                                    <br>
+
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="pexels"></div>
+                        <div class="small">
+                            <div class="inner">
+                                <div class="as1">
+                                    <div class="as2">
+                                        <div class="as3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="react1">
+                            <ul>
+                                <li><i class="fa-regular fa-thumbs-up"></i>..1K</li>
+                                <li><i class="fa-regular fa-message"></i>comment</li>
+                                <li><i class="fa-regular fa-heart"></i>400</li>
+                                <li><i class="fa-regular fa-paper-plane"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="fed1">
+                        <div class="cancel">
+                            <div class="p" style=" margin-bottom: 10px;">
+                                ...
+                            </div>
+                            <div class="x" style="margin: 9px; margin-top: 7px;">
+                                <p><i class="fa fa-xmark"></i></p>
+                            </div>
+                        </div>
+
+                        <div class="do" style="margin: 6px;">
+                            <h3 style="margin-left: 8px;"> Ashley Daniels</h3>
+                            <p>Do like comment or repost</p>
+                        </div>
+                        <br>
+                        <hr>
+
+                        <div class="cancel">
+                            <b style="font-size: 15px; padding-top: 40px; margin-right:10px; color: rgb(52, 52, 217);">+
+                                Follow</b>
+                        </div>
+
+                        <div class="ashley">
+                            <div class="ash">
+                                <div class="ashley-pic1">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h4>Ashley. <applet>4th +</applet>
+                                </h4>
+                                <p>Ashley-beauties.com.org <br>
+                                    <br>
+
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="feed1"></div>
+                        <div class="small">
+                            <div class="inner">
+                                <div class="as1">
+                                    <div class="as2">
+                                        <div class="as3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="react1">
+                            <ul>
+                                <li><i class="fa-regular fa-thumbs-up"></i>..1K</li>
+                                <li><i class="fa-regular fa-message"></i>comment</li>
+                                <li><i class="fa-regular fa-heart"></i>400</li>
+                                <li><i class="fa-regular fa-paper-plane"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container-right-side-bar">
+                    <div class="right-side-bar">
+                        <h3 style="margin: 10px;">Add to your feed</h3>
+                        <div class="news">
+                            <div class="profile-pic1">
+                                <img src="" alt="">
+                            </div>
+                            <div class="btn-img">
+                                <h4>alx africa</h4>
+                                <p> company . E-learning</p>
+                                <button><i class="fa fa-add"></i>Follow</button>
+                            </div>
+                        </div>
+
+                        <div class="news">
+                            <div class="profile-pic2">
+                                <img src="" alt="">
+                            </div>
+                            <div class="btn-img">
+                                <h4>alx africa</h4>
+                                <p>product at AUX . <br>founder of global tech</p>
+                                <button><i class="fa fa-add"></i>Follow</button>
+                            </div>
+                        </div>
+
+
+                        <div class="news">
+                            <div class="profile-pic3">
+                                <img src="" alt="">
+                            </div>
+                            <div class="btn-img">
+                                <h4>Rainoil Limited</h4>
+                                <p> company . E-learning</p>
+                                <button><i class="fa fa-add"></i>Follow</button>
+                            </div>
+                        </div>
+
+                        <h4 style="margin: 10px;">View all recommendation <i class="fa fa-arrow-right"
+                                style="font-size: 15px;"></i></h4>
+                    </div>
+                    <div class="try">
+                        <div class="left">
+                            <h4>Ad <i>...</i></h4>
+                        </div>
+                        <p style="margin: 25px; padding-top: 40px;">Lorem ipsum dolor sit amet conse adi</p>
+                        <div class="circle1">
+                            <div class="circle">
+                                <div class="show"></div>
+                                <div class="show1">
+                                    <img src="/IMAGES/no-4.jpg" alt="" width="80px">
+                                </div>
+                            </div>
+                        </div>
+
+                        <b style="text-align: center; margin-left: 13px;">start off with <i
+                                class="fa fa-euro-sign"></i>100 in three Ad credit</b><br>
+
+                        <button class="claim">claim <i class="fa fa fa-euro-sign"></i> 100 credit</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer></footer>
+    </div>
+</body>
+
+</html>
